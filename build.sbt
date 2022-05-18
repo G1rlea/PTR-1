@@ -11,11 +11,10 @@ val AkkaVersion = "2.6.18"
 val AkkaHttpVersion = "10.2.7"
 
 libraryDependencies ++= Seq(
-  "com.typesafe.akka" %% "akka-stream" % AkkaVersion,
-  "com.typesafe.akka" %% "akka-http" % AkkaHttpVersion,
-  "com.typesafe.akka" %% "akka-actor-typed" % AkkaVersion,
+  "com.lightbend.akka" %% "akka-stream-alpakka-sse" % "2.0.2",
+  "com.typesafe.akka" %% "akka-stream" % "2.5.31",
+  "com.typesafe.akka" %% "akka-http" % "10.1.11",
+  "com.typesafe.akka" %% "akka-actor" % "2.5.31",
+  "com.lihaoyi" %% "upickle" % "0.9.5",
   "com.typesafe.scala-logging" %% "scala-logging" % "3.9.4",
-  "ch.qos.logback" % "logback-classic" % "1.2.10",
-  "net.liftweb" %% "lift-json" % "3.5.0",
-  "de.heikoseeberger" %% "akka-sse" % "3.0.0",
 )
